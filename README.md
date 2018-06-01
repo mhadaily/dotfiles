@@ -10,7 +10,7 @@ To set up the `dotfiles` just run the appropriate snippet in the
 terminal:
 
 (:warning: **DO NOT** run the `setup` snippet if you don't fully
-understand [what it does](src/os/setup.sh). Seriously, **DON'T**!)
+understand [what it does](os/setup.sh). Seriously, **DON'T**!)
 
 | OS | Snippet |
 |:---|:---|
