@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+alias :q="exit"
+alias q="exit"
+alias c="clear"
+alias ch="history -c && > ~/.bash_history"
+alias e="vim --"
+alias g="git"
+alias m="man"
+alias map="xargs -n1"
+alias path='printf "%b\n" "${PATH//:/\\n}"'
+alias rm="rm -rf --"
+alias t="tmux"
+
+# Shortcuts
+alias pj="cd ~/Projects"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias gd="cd ~/Google\ Drive"
+
+alias ll="ls -l"
+
+# List all files colorized in long format, including dot files
+alias la="ls -la"
+
+# List only directories
+alias lsd="ls -l | grep --color=never '^d'"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Load OS specific aliases.
+
+. "aliases/$OS/bash_aliases"
