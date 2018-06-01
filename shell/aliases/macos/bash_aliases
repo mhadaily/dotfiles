@@ -51,10 +51,11 @@ alias update-all="sudo softwareupdate --install --all \
             && brew upgrade \
             && brew cleanup \
             && npm install -g npm \
-            && npm update -g \
-            && sudo gem update --system \
-            && sudo gem update \
-            && sudo gem cleanup"
+            && npm update -g "
+
+#&& sudo gem update --system \
+#&& sudo gem update \
+#&& sudo gem cleanup
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
