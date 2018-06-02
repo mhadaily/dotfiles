@@ -34,8 +34,8 @@ execute "defaults write com.apple.finder NewWindowTarget -string 'PfDe' && \
          defaults write com.apple.finder NewWindowTargetPath -string 'file://$HOME/'" \
     "Set '~' as the default location for new Finder windows"
 
-#defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true && \ hard drives,
-execute "defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true && \
+#defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true && \ hard drives,
+execute "defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true && \
          defaults write com.apple.finder ShowMountedServersOnDesktop -bool true && \
          defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true" \
     "Show icons for  servers, and removable media on the desktop"
