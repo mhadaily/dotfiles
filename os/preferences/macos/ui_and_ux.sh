@@ -73,7 +73,7 @@ execute "defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bo
     "Disable resume system-wide"
 
 execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string 'Laptop' && \
-         sudo scutil --set ComputerName 'latop' && \
+         sudo scutil --set ComputerName 'laptop' && \
          sudo scutil --set HostName 'laptop' && \
          sudo scutil --set LocalHostName 'laptop'" \
     "Set computer name"

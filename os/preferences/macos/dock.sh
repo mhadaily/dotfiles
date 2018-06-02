@@ -34,9 +34,9 @@ execute "defaults write com.apple.dock minimize-to-application -bool true" \
 execute "defaults write com.apple.dock mru-spaces -bool false" \
     "Do not automatically rearrange spaces based on most recent use"
 
-execute "defaults write com.apple.dock persistent-apps -array && \
-         defaults write com.apple.dock persistent-others -array " \
-    "Wipe all app icons"
+# execute "defaults write com.apple.dock persistent-apps -array && \
+#          defaults write com.apple.dock persistent-others -array " \
+#     "Wipe all app icons"
 
 execute "defaults write com.apple.dock show-process-indicators -bool true" \
     "Show indicator lights for open applications"
