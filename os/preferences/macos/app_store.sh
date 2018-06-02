@@ -22,4 +22,10 @@ execute "defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1" \
 execute "defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1" \
     "Install System data files and security updates"
 
+execute "defaults write com.apple.SoftwareUpdate ConfigDataInstall -int 1" \
+    "Automatically download apps purchased on other Macs"
+
+execute "defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1" \
+    "Check for software updates daily, not just once per week"
+
 killall "App Store" &> /dev/null

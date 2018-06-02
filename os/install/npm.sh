@@ -28,8 +28,8 @@ main() {
 
     printf "\n"
 
-    install_npm_package "!nstant-markdown-d" "instant-markdown-d"
     install_npm_package "nodemon" "nodemon"
+    install_npm_package "git-open" "git-open"
 
 }
 
