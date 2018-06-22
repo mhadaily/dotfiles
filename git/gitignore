@@ -1,5 +1,9 @@
 # Useful `.gitignore` templates:
 # https://github.com/github/gitignore
+#------
+#IDEA
+#---
+.idea
 
 # ----------------------------------------------------------------------
 # | Linux                                                              |
