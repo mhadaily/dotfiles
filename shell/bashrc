@@ -2,3 +2,12 @@
 
 [ -n "$PS1" ] \
     && . ~/.bash_profile
+
+# added by travis gem
+#[ -f /Users/majid/.travis/travis.sh ] && source /Users/majid/.travis/travis.sh
+
+###-tns-completion-start-###
+#if [ -f /Users/majid/.tnsrc ]; then 
+#    source /Users/majid/.tnsrc 
+#fi
+###-tns-completion-end-###
