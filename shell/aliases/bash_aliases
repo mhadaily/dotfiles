@@ -46,4 +46,4 @@ alias reload="exec ${SHELL} -l"
 
 # Load OS specific aliases.
 
-. "aliases/$OS/bash_aliases"
+#. "aliases/$OS/bash_aliases"
